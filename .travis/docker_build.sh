@@ -5,7 +5,7 @@ TMPDIR=/tmp/${TRAVIS_COMMIT}
 
 mkdir -p "${TMPDIR}"
 
-for ARCH in amd64 arm64v8 arm32v7 arm64v6; do
+for ARCH in amd64 arm64v8 arm32v7 arm32v6; do
     case $ARCH in
     amd64)
         DOCKERFILE='Dockerfile'
