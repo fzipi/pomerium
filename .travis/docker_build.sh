@@ -17,7 +17,7 @@ for ARCH in amd64 arm64v8 arm32v7 arm64v6; do
 
     FULL_IMAGE_NAME=${IMAGE_NAME}:${ARCH}-test
     docker build -t "${FULL_IMAGE_NAME}" -f ${DOCKERFILE} .
-    echo FULL_IMAGE_NAME >>${TMPDIR}/images
+    echo ${FULL_IMAGE_NAME} >>${TMPDIR}/images
 
     ## DEBUG
     docker version
