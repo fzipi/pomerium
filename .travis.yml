@@ -45,7 +45,7 @@ deploy:
 
   jobs:
     include:
-      - stage: docker build
+      - stage: docker_build
         if: branch = bug/fix-build-arch-2
         before_script:
           - curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
