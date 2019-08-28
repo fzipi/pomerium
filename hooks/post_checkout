@@ -2,4 +2,4 @@
 
 apt-get update
 # Upgrade docker-ce so that cross-arch support works...
-apt-get install -y curl binfmt-support docker-ce
+apt-get install -y curl binfmt-support docker-ee
