@@ -11,7 +11,7 @@ for ARCH in amd64 arm64v8 arm32v7 arm64v6; do
         DOCKERFILE='Dockerfile'
         ;;
     *)
-        DOCKERFILE="Dockerile.$ARCH"
+        DOCKERFILE="Dockerfile.$ARCH"
         ;;
     esac
 
